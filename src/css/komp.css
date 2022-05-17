@@ -1,0 +1,9 @@
+/* Если больше чем 1000 */
+@media screen and (min-width: 600px) {
+  .but-save,
+  .but-save-ok {
+    position: fixed;
+    left: calc(50% + 328px);
+    top: 10px;
+  }
+}

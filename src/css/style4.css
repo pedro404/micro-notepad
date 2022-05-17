@@ -1,0 +1,89 @@
+* {
+  font-family: Consolas;
+  font-size: 1.1rem;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  background-image: url("../images/bg-282.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(var(--vh, 1vh) * 100);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.box-text {
+  width: 95%;
+  max-width: 800px;
+  height: 97.5%;
+  padding: 5px;
+  white-space: pre-wrap;
+  background-color: #ffffff;
+  box-shadow: 0 0px 6px 4px #009eff;
+  border: 0;
+  border-radius: 3px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  outline: 0;
+  opacity: 0.95;
+  resize: none;
+}
+
+.but-save,
+.but-save-ok {
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/save.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  right: 5px;
+  top: 6px;
+  z-index: 10;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.but-save-ok,
+.but-save:hover {
+  background-image: url("../images/save-orange.svg");
+  opacity: 1;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#myBar {
+  width: 1%;
+  height: 7px;
+  background-color: #4caf50;
+}
